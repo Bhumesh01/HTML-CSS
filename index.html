@@ -111,5 +111,39 @@
                 </li>
             </ul>
         </dl>
+        <!--Form-->
+        <br/>
+        <h2>Let's understand your dreams</h2>
+        <form>
+            <label for="username">Username: </label>
+            <input id="username" type="text" name="username" placeholder="Enter your Userame" required autofocus>
+            <br/>
+            <label for="age">Select your age: </label>
+            <input id="age" type="range" name="age" min="10" max="100" oninput="result.value = this.value">
+            <output name="result"></output>
+            <br/>
+            <label>Select your gender: </label>
+            <input id="male" type="radio" name="male">
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="female">
+            <label for="female">Female</label>
+            <br/>
+            <label for="kind">Select the type of dream that you had this morning: </label>
+            <select id="kind" required>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="horror">Horror</option>
+            </select>
+            <br/>
+            <input type="file" name="pic">
+            <input type="submit" value="Upload">
+            <br/>
+            <input type="submit" value="Submit Your Response">
+            <br/>
+            <input id="subscribe" type="checkbox" name="subscribe">
+            <label for="subscribe">Subscribe to our news letter</label>
+            <br/>
+            <textarea  name="comments" cols="50" rows="4">Please Enter your Comments....</textarea>
+        </form>
     </body>
 </html>
