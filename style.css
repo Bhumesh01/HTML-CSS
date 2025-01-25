@@ -16,7 +16,7 @@ h2{
     font-size: large;
     
 }
-/*pseudo selexctor*/
+/*pseudo selector*/
 a:visited{ /*Link that is visited*/
     color: rgb(2, 4, 117);
 }
@@ -31,4 +31,7 @@ a:hover{/* css applied when cursor is moved over the text*/
 }
 #table td{
     background-color: rgb(145, 227, 227);
+}
+ol > li:first-child{ 
+    background-color: yellow;
 }
