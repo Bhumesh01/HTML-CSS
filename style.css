@@ -35,3 +35,21 @@ a:hover{/* css applied when cursor is moved over the text*/
 ol > li:first-child{ 
     background-color: yellow;
 }
+label{
+    font-weight: bold;
+}
+/*Height of an element includes only the content i.e not the padding and border..
+when we do box-sizing:border-box we make the height of an element = content + padding + border of the element*/
+#form{
+    font-size: large;
+    background-color: white;
+    border: 2px solid black;
+    padding: 2%;
+    margin: 1% 25%;
+    height: 400px;
+    box-sizing: border-box;
+}
+#box{
+    border: 2px solid blueviolet;
+    background-color: bisque;
+}

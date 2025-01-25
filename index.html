@@ -118,37 +118,44 @@
         <!--Form-->
         <br/>
         <h2>Let's understand your dreams</h2>
-        <form>
-            <label for="username">Username: </label>
-            <input id="username" type="text" name="username" placeholder="Enter your Userame" required autofocus>
-            <br/>
-            <label for="age">Select your age: </label>
-            <input id="age" type="range" name="age" min="10" max="100" oninput="result.value = this.value">
-            <output name="result"></output>
-            <br/>
-            <label>Select your gender: </label>
-            <input id="male" type="radio" name="male">
-            <label for="male">Male</label>
-            <input id="female" type="radio" name="female">
-            <label for="female">Female</label>
-            <br/>
-            <label for="kind">Select the type of dream that you had this morning: </label>
-            <select id="kind" required>
-                <option value="happy">Happy</option>
-                <option value="sad">Sad</option>
-                <option value="horror">Horror</option>
-            </select>
-            <br/>
-            <input type="file" name="pic">
-            <input type="submit" value="Upload">
-            <br/>
-            <input type="submit" value="Submit Your Response">
-            <br/>
-            <input id="subscribe" type="checkbox" name="subscribe">
-            <label for="subscribe">Subscribe to our news letter</label>
-            <br/>
-            <textarea  name="comments" cols="50" rows="4">Please Enter your Comments....</textarea>
-        </form>
+        <div style="border: 2px solid hsl(268, 50%, 56%); background-color: palevioletred;">
+            <div>Margin</div>
+            <form id="form">
+                <div>Padding</div>
+                <div id="box">
+                    <div>Content</div>
+                    <label for="username">Username: </label>
+                    <input id="username" type="text" name="username" placeholder="Enter your Userame" required autofocus>
+                    <br/>
+                    <label for="age">Select your age: </label>
+                    <input id="age" type="range" name="age" min="10" max="100" oninput="result.value = this.value">
+                    <output name="result"></output>
+                    <br/>
+                    <label>Select your gender: </label>
+                    <input id="male" type="radio" name="male">
+                    <label for="male">Male</label>
+                    <input id="female" type="radio" name="female">
+                    <label for="female">Female</label>
+                    <br/>
+                    <label for="kind">Select the type of dream that you had this morning: </label>
+                    <select id="kind" required>
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="horror">Horror</option>
+                    </select>
+                    <br/>
+                    <input type="file" name="pic">
+                    <input type="submit" value="Upload">
+                    <br/>
+                    <input type="submit" value="Submit Your Response">
+                    <br/>
+                    <input id="subscribe" type="checkbox" name="subscribe">
+                    <label for="subscribe">Subscribe to our news letter</label>
+                    <br/>
+                    <textarea  name="comments" cols="50" rows="4">Please Enter your Comments....</textarea>
+                </div>
+            </form>
+        </div>
         <br/>
         <!--Videos-->
         <video src="videos/video1.mp4" controls autoplay width="350" height="250"></video>
@@ -166,5 +173,12 @@
         <!--Iframes: they help to include a website in your website-->
         <br/>
         <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" height="500" width="500"></iframe>
+        <br/>
+        <!--Concept of Margin Collapse:Margin collapse is a CSS behavior where vertical margins between adjacent block-level elements are combined into a single margin, taking the larger of the two margins.-->
+        <div>
+            <div style="border: 2px solid black; margin: 25px; background-color:red">SCIENCE</div>
+            <div style="border: 2px solid black; margin: 20px; background-color:rgb(0, 255, 21)">BEHIND</div>
+            <div style="border: 2px solid black; margin: 40px; background-color:rgb(55, 0, 255)">DREAMS</div>
+        </div> 
     </body>
 </html>
