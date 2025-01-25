@@ -52,4 +52,12 @@ when we do box-sizing:border-box we make the height of an element = content + pa
 #box{
     border: 2px solid blueviolet;
     background-color: bisque;
+    line-height: 2;/*Line height refers to the vertical space between lines of text. It determines the spacing between baselines of consecutive text lines*/
+}
+dt{
+    /* font-size: 500px; */
+    color: hsla(240, 100%, 30%, 0.914);
+    text-transform: uppercase;
+    text-overflow:ellipsis;
+    overflow: hidden;
 }
