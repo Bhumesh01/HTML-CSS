@@ -45,9 +45,9 @@ when we do box-sizing:border-box we make the height of an element = content + pa
     background-color: white;
     border: 2px solid black;
     padding: 2%;
-    margin: 1% 25%;
-    height: 400px;
-    box-sizing: border-box;
+    margin: 2%;
+    /* height: 400px;
+    box-sizing: border-box; */
 }
 #box{
     border: 2px solid blueviolet;
