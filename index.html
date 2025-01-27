@@ -192,13 +192,14 @@
             1vw = 1% of viewport width
             //ly 1vh = 1% of viewport height
             width: 50vw; means 50% of the viewport's width
-            Note: margin: auto centers the block elements not the inline elements-->
+            Note: margin: auto centers the block elements not the inline elements
+                  //ly margin/padding:32px say doesnt applies to the top for inline elements... for this to happen set display:inline-block-->
             <div style="border: 2px solid black; background-color:aquamarine;width: 80vw; height: 5vh; margin: auto; padding: 0; box-sizing: border-box;">Dream: </div>
             <!-- xem:size it was supposed to inherit * x &&& xrem: x*font-size of root element -->
-            <div style="border: 2px solid black; background-color:aquamarine;width: 100vw; font-size: 16px; height: 100vh; margin:auto; padding: 0; box-sizing: border-box;">
+            <div style="border: 2px solid black; background-color:aquamarine;width: 90vm; font-size: 16px; height: 100vh; margin:auto; padding: 0; box-sizing: border-box;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis dicta harum inventore aspernatur placeat quaerat beatae blanditiis suscipit at nostrum corrupti asperiores dolor odio dolorem, accusantium repudiandae accusamus sunt! 
-                <p style="font-size: 2em;text-overflow: ellipsis; overflow: hidden;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cumque illum quod ipsum quidem ab nobis officia harum dicta inventore expedita consequuntur, rem fugit aliquam.</p>
-                <p style="font-size: 2rem;text-overflow: ellipsis; overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe possimus ad asperiores nesciunt! Earum eius accusamus quaerat aut delectus debitis inventore ut nisi enim?</p>
+                <p style="font-size: 2em;text-overflow: ellipsis; display: inline; overflow: hidden;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cumque illum quod ipsum quidem ab nobis officia harum dicta inventore expedita consequuntur, rem fugit aliquam.</p>
+                <p style="font-size: 2rem;text-overflow: ellipsis; display: inline;  overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe possimus ad asperiores nesciunt! Earum eius accusamus quaerat aut delectus debitis inventore ut nisi enim?</p>
             </div>
             <!--vim: on phone vmin is our width and on pc height is our vmin. hence, vmin is Equal to the smaller of vw or vh.
             vmax: on phone vmax is our height and on pc vmax is our width. hence, vmax is equal to larger of vw or vh.
@@ -206,9 +207,36 @@
             Maintain proportions based on the smaller side of the screen : vmin	: Helps avoid elements overflowing when the screen is short (e.g., landscape mode).
             Maintain proportions based on the larger side of the screen : vmax : Ensures elements scale with the larger side, useful for full-screen designs or backgrounds.
             -->
-            <div style="background-color: yellow; font-size: 22px; width: 100vmin; color: navy;">
+            <div style="background-color: yellow; font-size: 22px; width: 100vmin; color: navy; margin: auto;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti minus id ratione amet voluptatibus fuga voluptate ipsum, reiciendis sequi architecto nam deleniti labore nulla, itaque assumenda mollitia harum. Numquam quis quas iure ex exercitationem quae molestias? Eveniet inventore rerum sint optio vero, nemo excepturi architecto doloribus ea placeat sunt. Quas, enim! Temporibus quo ratione rem quia minus pariatur optio hic, eaque repellat reiciendis ipsam, quibusdam ab! Nisi itaque voluptas laboriosam omnis deserunt fuga praesentium. Quam in saepe dolorum velit, accusantium, repellat voluptates temporibus ratione fugiat alias nam facilis ut voluptate vero quas quisquam obcaecati excepturi cumque! Magnam, illum et.
             </div>
+        </div>
+        <br/>
+        <!--Display Properties-->
+        <div style="border: 2px solid red">
+            <div style="display:inline; padding: 32px; border: 2px solid black">Hello</div>
+            <div style="display:inline; padding: 32px; border: 2px solid black">How are you all</div>
+            <div style="display:inline; padding: 32px; border: 2px solid black">What are you doing?</div>
+        </div>
+        <div style="border: 2px solid green">
+            <div style="display:inline-block; padding: 32px; border: 2px solid blue">Hello</div>
+            <div style="display:inline-block; padding: 32px; border: 2px solid blue">How are you all</div>
+            <div style="display:inline-block; padding: 32px; border: 2px solid blue">What are you doing?</div>
+        </div>
+        <div style="border: 2px solid purple">
+            <div style="display:block; padding: 32px; border: 2px solid yellowgreen">Hello</div>
+            <div style="display:block; padding: 32px; border: 2px solid yellowgreen">How are you all</div>
+            <div style="display:block; padding: 32px; border: 2px solid yellowgreen">What are you doing?</div>
+        </div>
+        <div style="border: 2px solid brown"> <!--display:none hides the element and doesn't occupy any space-->
+            <div style="display:none; padding: 32px; border: 2px solid coral">Hello</div>
+            <div style="display:none; padding: 32px; border: 2px solid coral">How are you all</div>
+            <div style="display:none; padding: 32px; border: 2px solid coral">What are you doing?</div>
+        </div>
+        <div style="border: 2px solid black"> <!--visibility:hidden hides the element and do occupy any space-->
+            <div style="display:inline; visibility: hidden; padding: 32px; border: 2px solid blue">Hello</div>
+            <div style="display:inline; visibility: hidden; padding: 32px; border: 2px solid blue">How are you all</div>
+            <div style="display:inline; visibility: hidden; padding: 32px; border: 2px solid blue">What are you doing?</div>
         </div>
     </body>
 </html>
