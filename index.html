@@ -196,10 +196,14 @@
                   //ly margin/padding:32px say doesnt applies to the top for inline elements... for this to happen set display:inline-block-->
             <div style="border: 2px solid black; background-color:aquamarine;width: 80vw; height: 5vh; margin: auto; padding: 0; box-sizing: border-box;">Dream: </div>
             <!-- xem:size it was supposed to inherit * x &&& xrem: x*font-size of root element -->
-            <div style="border: 2px solid black; background-color:aquamarine;width: 90vm; font-size: 16px; height: 100vh; margin:auto; padding: 0; box-sizing: border-box;">
+            <!--If overflow: auto; then if text overflows the scroll bar will be visible else not...
+            if overflow: scroll; then the scroll bar is always visible
+            white-space: nowrap; introduces an horizontal scroll bar
+            text-overflow: ellipsis-->
+            <div style="border: 2px solid black; background-color:aquamarine;width: 90vm; font-size: 16px; height: 100vh; margin:auto; padding: 0; box-sizing: border-box; overflow: auto;text-overflow: ellipsis;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis dicta harum inventore aspernatur placeat quaerat beatae blanditiis suscipit at nostrum corrupti asperiores dolor odio dolorem, accusantium repudiandae accusamus sunt! 
-                <p style="font-size: 2em;text-overflow: ellipsis; display: inline; overflow: hidden;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cumque illum quod ipsum quidem ab nobis officia harum dicta inventore expedita consequuntur, rem fugit aliquam.</p>
-                <p style="font-size: 2rem;text-overflow: ellipsis; display: inline;  overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe possimus ad asperiores nesciunt! Earum eius accusamus quaerat aut delectus debitis inventore ut nisi enim?</p>
+                <p style="font-size: 2em; display: inline;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cumque illum quod ipsum quidem ab nobis officia harum dicta inventore expedita consequuntur, rem fugit aliquam.</p>
+                <p style="font-size: 2rem; display: inline;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio temporibus at eum minus fuga, commodi cum iure officia assumenda veritatis quod quibusdam labore ducimus atque et. Aspernatur eveniet rerum repellendus minus quisquam iste sequi earum cum nobis cupiditate temporibus aperiam exercitationem doloremque est inventore tenetur esse velit, corrupti aut! Aliquid cumque animi magnam, nesciunt, temporibus, iste porro incidunt deserunt natus nulla neque ad repellendus repellat distinctio alias consequatur obcaecati placeat rerum.</p>
             </div>
             <!--vim: on phone vmin is our width and on pc height is our vmin. hence, vmin is Equal to the smaller of vw or vh.
             vmax: on phone vmax is our height and on pc vmax is our width. hence, vmax is equal to larger of vw or vh.
