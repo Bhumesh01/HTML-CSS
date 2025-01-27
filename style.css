@@ -69,3 +69,23 @@ dt{
 [data-x=a]{
     background-color: rgb(140, 192, 238) !important;
 }
+.myBox{
+    padding: 32px;
+    background-color: rgb(135, 227, 227);
+    width: 80vmin;
+    font-size: larger;
+    font-weight: 500;
+    border: 2px solid navy;
+    box-shadow: 15px 15px 5px rgb(8, 91, 255);
+}
+/* While both can visually appear similar, outlines differ from borders in a few ways:
+Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+Width: Borders can have varying widths on different sides, outlines have a uniform width.
+Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot. */
+h1{
+    text-shadow: 5px 5px 2px grey;
+    outline: 2px dashed rgb(70, 5, 70);
+    border: 2px dashed rgb(168, 29, 210);
+    outline-offset: 2px;
+}
