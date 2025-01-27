@@ -97,7 +97,7 @@
             </li>
         </ol>
         <br/>
-        <h2> Key Terms in Dream Science</h2>
+        <h2 style="background-color: red;" data-x="a"> Key Terms in Dream Science</h2>
         <dl>
             <ul type="square">
                 <li>
@@ -183,5 +183,32 @@
             <div style="border: 2px solid black; margin: 20px; background-color:rgb(0, 255, 21)">BEHIND</div>
             <div style="border: 2px solid black; margin: 40px; background-color:rgb(55, 0, 255)">DREAMS</div>
         </div> 
+        <br/>
+        <!-- CSS sizing Units-->
+        <div>
+            <!--Pixel(px): it is 1/96 of an inch-->
+            <div style="border: 2px solid black; background-color:aquamarine;width: 1391px; margin: 0; padding: 0; box-sizing: border-box;">Dream: </div>
+            <!--Pixels size make the website less responsive; we can use additional unit that is viewport unit(vw) (the visible area of the web page in the browser window)
+            1vw = 1% of viewport width
+            //ly 1vh = 1% of viewport height
+            width: 50vw; means 50% of the viewport's width
+            Note: margin: auto centers the block elements not the inline elements-->
+            <div style="border: 2px solid black; background-color:aquamarine;width: 80vw; height: 5vh; margin: auto; padding: 0; box-sizing: border-box;">Dream: </div>
+            <!-- xem:size it was supposed to inherit * x &&& xrem: x*font-size of root element -->
+            <div style="border: 2px solid black; background-color:aquamarine;width: 100vw; font-size: 16px; height: 100vh; margin:auto; padding: 0; box-sizing: border-box;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis dicta harum inventore aspernatur placeat quaerat beatae blanditiis suscipit at nostrum corrupti asperiores dolor odio dolorem, accusantium repudiandae accusamus sunt! 
+                <p style="font-size: 2em;text-overflow: ellipsis; overflow: hidden;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi cumque illum quod ipsum quidem ab nobis officia harum dicta inventore expedita consequuntur, rem fugit aliquam.</p>
+                <p style="font-size: 2rem;text-overflow: ellipsis; overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe possimus ad asperiores nesciunt! Earum eius accusamus quaerat aut delectus debitis inventore ut nisi enim?</p>
+            </div>
+            <!--vim: on phone vmin is our width and on pc height is our vmin. hence, vmin is Equal to the smaller of vw or vh.
+            vmax: on phone vmax is our height and on pc vmax is our width. hence, vmax is equal to larger of vw or vh.
+            100vmin = 100%*min(w, h); w=vw and h=vh
+            Maintain proportions based on the smaller side of the screen : vmin	: Helps avoid elements overflowing when the screen is short (e.g., landscape mode).
+            Maintain proportions based on the larger side of the screen : vmax : Ensures elements scale with the larger side, useful for full-screen designs or backgrounds.
+            -->
+            <div style="background-color: yellow; font-size: 22px; width: 100vmin; color: navy;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti minus id ratione amet voluptatibus fuga voluptate ipsum, reiciendis sequi architecto nam deleniti labore nulla, itaque assumenda mollitia harum. Numquam quis quas iure ex exercitationem quae molestias? Eveniet inventore rerum sint optio vero, nemo excepturi architecto doloribus ea placeat sunt. Quas, enim! Temporibus quo ratione rem quia minus pariatur optio hic, eaque repellat reiciendis ipsam, quibusdam ab! Nisi itaque voluptas laboriosam omnis deserunt fuga praesentium. Quam in saepe dolorum velit, accusantium, repellat voluptates temporibus ratione fugiat alias nam facilis ut voluptate vero quas quisquam obcaecati excepturi cumque! Magnam, illum et.
+            </div>
+        </div>
     </body>
 </html>
