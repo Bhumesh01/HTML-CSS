@@ -89,3 +89,11 @@ h1{
     border: 2px dashed rgb(168, 29, 210);
     outline-offset: 2px;
 }
+dl ul li{
+    list-style: devanagari;
+    background-color: wheat;
+    list-style-position: inside;
+    list-style-type: "😎";
+    list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXUbiUyNX8hFGfXIyndbUfq0Y88AB4pqsQQ&s");
+    list-style: disc inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXUbiUyNX8hFGfXIyndbUfq0Y88AB4pqsQQ&s");
+}
