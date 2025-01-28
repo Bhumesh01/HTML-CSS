@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content=""A card template showcasing the beauty of Lago di Braies with interactive theme switching functionality."">
+        <meta name="description" content="A card template showcasing the beauty of Lago di Braies with interactive theme switching functionality.">
         <title>Card</title>
         <style>
             :root{
@@ -93,8 +93,8 @@
         </div>
     </body>
     <script>
+        let isDarkMode = false;
         function changeTheme(){
-            let isDarkMode = false;
             const root = document.documentElement;
             if (isDarkMode) {
                 root.style.setProperty('--color', 'rgb(216, 216, 216)');
