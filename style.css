@@ -97,3 +97,49 @@ dl ul li{
     list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXUbiUyNX8hFGfXIyndbUfq0Y88AB4pqsQQ&s");
     list-style: disc inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXUbiUyNX8hFGfXIyndbUfq0Y88AB4pqsQQ&s");
 }
+.box1{
+    background-color: aqua;
+    /* position: absolute;
+    bottom: 0px;this will look for the nearset positional ancestor and stick to it at 100px from top of that element */
+}
+.box2{
+    background-color: azure;
+    /* position: relative;
+    top: -56px;
+    left: 34px;
+    z-index: 1; */
+}
+.box3{
+    background-color: antiquewhite;
+    /* position: absolute;
+    top: 56px; */
+    position: sticky;
+    top: 0px;
+}
+.box4{
+    background-color: purple;
+    position: fixed;/*even if i scroll page up or down its position is fixed*/
+    top: 0px;
+    z-index: -1;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.Box{
+    margin: 3px;
+    padding: 3px;
+    height: 133px;
+    width: 80vw;
+    border: 2px solid black;
+}
+.parent{
+    border: 3px solid purple;
+    padding: 43px;
+    margin: 34px;
+    height: 1155px;
+    /* position: relative; */
+}
+/*Common use cases:
+fixed: Global navigation bars, chat widgets, "back to top" buttons
+sticky: Section headers in long lists, category headers in tables, sidebar navigation that stays within a container*/
