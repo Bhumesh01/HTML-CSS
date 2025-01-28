@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <meta name="description" content="Nature Card Template">
+        <title>Card</title>
+        <style>
+            body{
+                background-color: rgb(216, 216, 216);
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+            }
+            #container{
+                display: block;
+                margin: 5px auto;
+                min-width: 150px;
+                background-color: white;
+                padding: 15px;
+                border: 2px solid rgb(208, 205, 205);
+                box-shadow: 5px 5px 5px rgb(67, 65, 65);
+                border-radius: 7px;
+                max-width: 750px;
+            }
+            .element{
+                padding: 3px 15px;
+                color: grey;
+                background-color: white;
+                border: 2px solid rgb(215, 210, 210);
+                border-radius: 13px;
+                font-size: 19px;
+                font-weight: 500;
+                display: inline-block;
+            }
+            img{
+                border-radius: 7px;
+                margin: 5px auto;
+            }
+            div >p{
+                color: grey;
+            }
+            #read{
+                display: block;
+                background-color: rgb(216, 235, 245);
+                border-radius: 25px;
+                color: rgb(14, 153, 232);
+                font-weight: 400;
+                padding: 15px;
+                font-size: 18px;
+                border: none;
+                margin: 0px auto;
+                cursor: pointer;
+            }
+            #read:hover{
+                color: rgba(51, 155, 215, 0.661);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="image">
+                <img src="https://thumbs.dreamstime.com/b/young-man-sitting-rock-looking-beautiful-view-sea-generated-ai-323395692.jpg" width="100%" alt="Man sitting on the sea shore">
+            </div>
+            <div style="margin: 10px auto; margin-bottom: 2px;">
+                <div class="element">Nature</div>
+                <div class="element">Lake</div>
+            </div>
+            <div>
+                <h1 style="font-weight: 400;">Lago di Braies</h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias sed vero quae nisi repellendus eos quo hic excepturi soluta!</p>
+            </div>
+            <div>
+                <button id="read">Read More</button>
+            </div>
+        </div>
+    </body>
+</html>
