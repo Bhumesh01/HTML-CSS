@@ -2,12 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
-        <meta name="description" content="Nature Card Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""A card template showcasing the beauty of Lago di Braies with interactive theme switching functionality."">
         <title>Card</title>
         <style>
+            :root{
+                --color:rgb(216, 216, 216);
+                --defsize: 20px;
+                --seccolor: white;
+                --deffont: grey;
+                --maincolor: black;
+                --bordercolor: rgb(208, 205, 205);
+                --bordershadow: rgb(67, 65, 65);
+                --btncolor: rgb(216, 235, 245);
+                --btnfontcolor: rgb(14, 153, 232);
+                --btnhover: rgba(51, 155, 215, 0.661);
+            }
             body{
-                background-color: rgb(216, 216, 216);
+                background-color: var(--color);
+                color: var(--maincolor);
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-size: 20px;
             }
@@ -15,18 +28,18 @@
                 display: block;
                 margin: 5px auto;
                 min-width: 150px;
-                background-color: white;
+                background-color: var(--seccolor);
                 padding: 15px;
-                border: 2px solid rgb(208, 205, 205);
-                box-shadow: 5px 5px 5px rgb(67, 65, 65);
+                border: 2px solid var(--bordercolor);
+                box-shadow: 5px 5px 5px var(--bordershadow);
                 border-radius: 7px;
                 max-width: 750px;
             }
             .element{
                 padding: 3px 15px;
-                color: grey;
-                background-color: white;
-                border: 2px solid rgb(215, 210, 210);
+                color: var(--deffont);
+                background-color: var(--seccolor);
+                border: 2px solid var(--bordercolor);
                 border-radius: 13px;
                 font-size: 19px;
                 font-weight: 500;
@@ -37,29 +50,29 @@
                 margin: 5px auto;
             }
             div >p{
-                color: grey;
+                color: var(--deffont);
             }
-            #read{
+            .read{
                 display: block;
-                background-color: rgb(216, 235, 245);
+                background-color: var(--btncolor);
                 border-radius: 25px;
-                color: rgb(14, 153, 232);
+                color: var(--btnfontcolor);
                 font-weight: 400;
                 padding: 15px;
                 font-size: 18px;
                 border: none;
-                margin: 0px auto;
+                margin: 2px auto;
                 cursor: pointer;
             }
-            #read:hover{
-                color: rgba(51, 155, 215, 0.661);
+            .read:hover{
+                color: var(--btnhover);
             }
         </style>
     </head>
     <body>
         <div id="container">
             <div id="image">
-                <img src="https://thumbs.dreamstime.com/b/young-man-sitting-rock-looking-beautiful-view-sea-generated-ai-323395692.jpg" width="100%" alt="Man sitting on the sea shore">
+                <img src="https://thumbs.dreamstime.com/b/young-man-sitting-rock-looking-beautiful-view-sea-generated-ai-323395692.jpg" width="100%" alt="AI-generated image of a man sitting on a rock by the sea shore">
             </div>
             <div style="margin: 10px auto; margin-bottom: 2px;">
                 <div class="element">Nature</div>
@@ -72,8 +85,35 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias sed vero quae nisi repellendus eos quo hic excepturi soluta!</p>
             </div>
             <div>
-                <button id="read">Read More</button>
+                <button class="read">Read More</button>
+            </div>
+            <div>
+                <button class="read" onclick="changeTheme()">Change Theme💡</button>
             </div>
         </div>
     </body>
+    <script>
+        function changeTheme(){
+            let isDarkMode = false;
+            const root = document.documentElement;
+            if (isDarkMode) {
+                root.style.setProperty('--color', 'rgb(216, 216, 216)');
+                root.style.setProperty('--seccolor', 'white');
+                root.style.setProperty('--maincolor', 'black');
+                root.style.setProperty('--btncolor', 'rgb(216, 235, 245)');
+                root.style.setProperty('--btnfontcolor', 'rgb(14, 153, 232)');
+                root.style.setProperty('--btnhover', 'rgba(51, 155, 215, 0.661)');
+                root.style.setProperty('--bordercolor', 'rgb(208, 205, 205)');
+            } else {
+                root.style.setProperty('--color', 'black');
+                root.style.setProperty('--seccolor', 'rgb(17, 16, 16)');
+                root.style.setProperty('--maincolor', 'white');
+                root.style.setProperty('--btncolor', 'rgb(67, 65, 65)');
+                root.style.setProperty('--btnfontcolor', 'white');
+                root.style.setProperty('--btnhover', 'grey');
+                root.style.setProperty('--bordercolor', 'grey');
+            }
+            isDarkMode = !isDarkMode;
+        }
+    </script>
 </html>
