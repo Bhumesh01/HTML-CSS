@@ -143,3 +143,31 @@ dl ul li{
 /*Common use cases:
 fixed: Global navigation bars, chat widgets, "back to top" buttons
 sticky: Section headers in long lists, category headers in tables, sidebar navigation that stays within a container*/
+#media{
+    background-color: skyblue;
+}
+@media only screen and (max-width: 485px){
+    #media{
+        background-color: Yellow;
+    }
+}
+.boxes{
+    width: 344px;
+    height: 344px;
+    background-color: rgb(0, 213, 255);
+    margin: 2px;
+    display: block;
+}
+#mainBox{
+    display: flex;
+}
+@media only screen and (max-width:485px){
+    #mainBox{
+        flex-direction: column;
+    }
+}
+@media only screen and (orientation:landscape){
+    #mainBox{
+        border: 2px solid navy;
+    }
+}
