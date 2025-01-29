@@ -171,3 +171,50 @@ sticky: Section headers in long lists, category headers in tables, sidebar navig
         border: 2px solid navy;
     }
 }
+/*
+The :first-child selector works like this:
+It selects the element if it is the first child of its parent.
+It does not matter whether the element has a class or ID—those identifiers are used for selection, but :first-child checks the element's position within its parent.
+the below code thus doesn't get applied to the div of class .rects
+.rects:first-child{
+    background-color: red;
+}
+Now if i write the the code below...
+here the immediate parent of .rect div is .rects div..so it make it's background-color of first .rect child to be red*/
+/*pseudo selectors*/
+.rect:first-child{
+    background-color: red;
+}
+.rect:first-child:first-letter{
+    color: rgb(16, 5, 120);
+}
+.rect::first-line{
+    background-color: yellow;
+}
+.rects *{
+    border: 2px solid black;
+    margin: 5px;
+}
+/*Attribute selector*/
+
+.rect:nth-child(odd),.rect:nth-last-child(1), [data-top="primary"]{
+    padding-top: 10px;
+}
+/* ::before/::after Helps to introduce elements dynamically before a respective HTML tag*/
+.rects::before{
+    content: "Rectangles:";
+    margin: 5px;
+    border: 2px solid black;
+}
+.rects::after{
+    content: "Rectangles Ended";
+    margin: 5px;
+    border: 2px solid black;
+}
+/* selection pseudo selector*/
+.rect::selection{
+    color: darkgreen;
+}
+.rect:first-child:first-letter{
+    color: rgb(16, 5, 120);
+}
