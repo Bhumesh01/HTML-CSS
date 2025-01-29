@@ -511,6 +511,11 @@ Please Enter your Comments....</textarea
         Higher z-index values appear on top of elements with lower values
         Default z-index value is auto (effectively 0)
         Can be positive or negative numbers)
+        Note:The position: sticky property only controls how the element behaves while its parent is in view. Once the parent scrolls away, the sticky element must go with it because it can't exist independently of its parent.
+            With position: fixed, the element breaks free from its parent's constraints and positions itself relative to the viewport instead. It doesn't matter if it's inside the header or not!
+            Key differences:
+            position: sticky - Stays within parent boundaries
+            position: fixed - Ignores parent completely, sticks to viewport
         Note: position: fixed/sticky/absolute/relative and transform, filter and perspective properties also make an element appear as positioned-->
     <div class="parent">
         <div class="Box box1"></div>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Web development course website">
+        <title>Course</title>
+        <style>
+
+            :root{
+                --maincolor: #0d0221; /* Dark Navy */
+                --secolor: #d6bdf0; /* Neon Purple */
+                --bordercolor: #6a0572; /* Deep Purple */
+                --outlinecolor: #b300ff; /* Bright Purple */
+                --paragraphcolor: #1a1a40; /* Dark Purple */
+                --btnback: #9d53e8; /* Neon Purple */
+                --btncolor: white;
+                --btnhover: #b983ff; /* Lighter Neon */
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 18px;
+                background-color: var(--maincolor);
+                color: var(--secolor);
+            }
+            header{
+                background-color: var(--maincolor);
+                display: block;
+                width: 100%;
+                position: sticky;
+                top: 0px;
+                z-index: 10;
+                box-shadow: 2px 2px 2px var(--outlinecolor);
+            }
+            header a{
+                color: var(--btncolor);
+                text-decoration: none;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid var(--bordercolor); */
+                flex-wrap: wrap;
+                margin: 2px auto;
+                padding: 5px;
+            }
+            nav li{
+                list-style: none;
+                display: inline-block;
+                padding: 5px;
+            }
+            footer{
+                background-color: var(--paragraphcolor);
+            }
+            footer a{
+                color: var(--secolor);
+                text-decoration: none;
+            }
+            footer li{
+                list-style: none;
+                display: inline-block;
+                padding: 5px;
+            }
+            article{
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                margin: 15px 60px;
+                border-radius: 15px;
+            }
+            
+            p{
+                border: 2px solid var(--bordercolor);
+                padding: 15px;
+                width: 35vw;
+                outline: 2px solid var(--outlinecolor);
+                outline-offset: 3px;
+                margin: 0px auto;
+                background-color: var(--paragraphcolor);
+                border-radius: 8px;
+            }
+            img{
+                display: inline;
+                outline: 2px solid var(--outlinecolor);
+                outline-offset: 5px;
+                border-radius: 100px;
+                position: fixed;
+                right: 8px;
+                top: 50vmin;
+                width:50vw;
+                max-width: 105px;
+                z-index: 10;
+                opacity: 70%;
+            }
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;
+            }
+            #container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                border: 2px solid var(--bordercolor);
+                outline: 2px solid var(--outlinecolor);
+                outline-offset: 5px;
+                border-radius: 25px;
+                padding: 19px;
+                margin: 15px 25px;
+            }
+            button{
+                font-size: 20px;
+                border-radius: 15px;
+                background-color: var(--btnback);
+                border:none;
+                padding: 10px;
+                cursor: pointer;
+                color: var(--btncolor);
+                font-weight: 600;
+            }
+            button:hover{
+                background-color: var(--btnhover);
+            }
+            @media only screen and (max-width:786px){
+                article{
+                    flex-direction: column;
+                    margin: 15px auto;
+                    padding: auto;
+                }
+                p{
+                    width: 65%;
+                    margin: 10px auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./layout.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./layout.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="./layout.html">Courses</a>
+                    </li>
+                    <li>
+                        <a href="./layout.html">Features</a>
+                    </li>
+                    <li>
+                        <a href="./layout.html">Docs</a>
+                    </li>
+                    <li>
+                        <a href="./layout.html">Plans and Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non ipsam sapiente, quisquam laboriosam repellat corrupti? Nesciunt eius fugiat quaerat iure tempore quam tempora voluptate et, ipsa, quos asperiores magni suscipit ipsum officiis ab. Obcaecati veniam facilis dolores alias harum, aperiam, explicabo, corporis nesciunt modi quod fugit consequuntur illum nihil cupiditate. Rem veniam accusantium animi asperiores sit fugiat repudiandae officia repellendus, libero dolor nemo harum non quasi, nulla quos placeat consequatur recusandae. Accusamus ut praesentium architecto perferendis temporibus quidem cupiditate sed asperiores impedit doloribus nemo sint, corrupti ratione eos distinctio, nihil hic aliquam eum laudantium. Accusamus deleniti a velit esse.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde, accusamus eum nesciunt nisi consectetur, sed quidem totam magnam perferendis consequuntur ab illum itaque soluta inventore corporis sit. Expedita a, excepturi cum eos itaque assumenda ad culpa porro voluptatum. Maiores eos earum impedit quia error pariatur, debitis quisquam temporibus tempora consequatur consectetur eveniet odit natus ipsa. Placeat similique sunt, vero ipsa, culpa commodi deleniti itaque voluptate reprehenderit assumenda error obcaecati perferendis amet dolores ab dolor minus impedit rerum, suscipit ipsum corporis accusamus consequuntur. Mollitia atque nesciunt voluptatum perferendis molestiae officiis magni quo excepturi tempora voluptate sequi esse aspernatur eos expedita optio architecto, laboriosam autem laborum sit earum repellendus officia cum? Accusantium repellendus esse dolore excepturi. Quaerat ut repellendus quibusdam itaque.
+                </p>
+            </article>
+            <section>
+                <div>
+                    <img src="https://img.freepik.com/free-vector/creative-gradient-code-logo_23-2148820572.jpg" alt="Course logo" >
+                </div>
+                <div id="container">
+                    <h3 style="text-align: center;">Welcome To Web Development Course!</h3>
+                    <button>Get Started Today</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="./layout.html">Copyright &copy;</a>
+                </li>
+                <li>
+                    <a href="./layout.html">Terms of use</a>
+                </li>
+                <li>
+                    <a href="./layout.html">Private Policy</a>
+                </li>
+                <li>
+                    <a href="./layout.html">License</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
