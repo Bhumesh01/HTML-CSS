@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Designing a navbar">
+        <title>Grid</title>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                width: 90vw;
+                padding: 10px;
+                margin: 0px auto;
+            }
+            #logo >img{
+                width: 12vw;
+            }
+            #contents-1{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 55vw;
+                color: #222222;
+            }
+            #contents-2{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                gap: 15px;
+            }
+            #bar{
+                display: flex; 
+                justify-content: space-between;
+                align-items: center;
+            }
+            #mobileSideBar{
+                display: none;
+            }
+            .navitems{
+                padding: 0px 8px 13px 0px;
+            }
+            #search{
+                display: flex;
+                justify-content: center;
+                vertical-align: middle;
+                line-height: 1;
+            }
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #222222;
+            }
+            main{
+                display: block;
+                margin: 2% 5%;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 25px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            .card{
+                display: grid;
+                padding: 16px;
+                background-color: #f9f9f9;
+                padding: 16px;
+                place-self: center;
+                border-radius: 5px;
+                width: 100%;
+                max-width: 302px;
+            }
+            .card p{
+                font-size: 8px;
+                text-align: center;
+                font-weight: 500;
+                word-break: break-all;
+            }
+            .card h3{
+                font-size: 20px;
+                text-align: center;
+                font-weight: 600;
+            }
+            .card h4{
+                font-size: 12px;
+                text-align: center;
+                font-weight: 400;
+            }
+            .card h5{
+                font-size: 10px;
+                text-align: center;
+                font-weight: 500;
+            }
+            .card a{
+                background-color: #5cb85c;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 6px;
+                font-weight: 600;
+                padding: 8px 16px;
+            }
+            #text-1 h1{
+                font-weight: 400;
+                font-size: 48px;
+                text-align: center;
+            }
+            #text-1 img{
+                max-width: 100%;
+                height: auto;
+            }
+            #text-1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            #text-2{
+                text-align: center;
+                font-size: 24px;
+                word-wrap: break-word;
+                font-weight: 400;
+                padding: 0px 0px 10px;
+                color: #222222;
+            }
+            #btn{
+                text-align: center;
+                font-size: 14px;
+                background-color: #00B6D1;
+                color: #fff;
+                font-weight: 700;
+                padding: 12px 20px;
+                text-transform: uppercase;
+                min-width: 256px;
+                border-radius: 5px;
+                margin: 0px 0px 70px;
+            }
+            #text-3{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            @media only screen and (max-width:980px){
+                #contents-1{
+                    display: none;
+                }
+                #mobileSideBar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: auto;
+                    color: rgb(21, 0, 251);
+                }
+                #search{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: auto;
+                }
+                #logo>img{
+                    width: 50%;
+                    min-width: 100px;
+                }
+                .container{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 25px;
+                    justify-content: center;
+                }
+            }
+            @media only screen and (max-width:600px){
+                #text-1 h1{
+                    font-weight: 400;
+                    font-size: 35px;
+                }
+                #text-2{
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header style="width: 100%; margin: 0; padding: 0;">
+            <nav>
+                <div id="logo">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="ultraedit logo" />
+                </div>
+                <div id="bar">
+                    <div id="contents-1">
+                        <div class="navitems"><a href="#">Products &#9662;</a></div>
+                        <div class="navitems"><a href="#">For business &#9662;</a></div>
+                        <div class="navitems"><a href="#">Resources &#9662;</a></div>
+                        <div class="navitems"><a href="#">Support &#9662;</a></div>
+                        <div class="navitems"><a href="#">Our Company &#9662;</a></div>
+                        <div class="navitems"> <img src="./translation.png"  width="25" alt="language translation icon" /> </div>
+                    </div>
+                    <div id="contents-2">
+                        <div id="search">&#x1F50D;</div>
+                        <div id="mobileSideBar"> ☰</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="text-1">
+                <h1>Download <strong>UltraEdit</strong> for Windows
+                <a href="https://www.g2.com/products/ultraedit/reviews"><img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="reviews photo"/></a>
+                </h1>
+            </div>
+            <div style="display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;">
+                <h3 id="text-2">Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</h3>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <a id="btn" href="https://www.ultraedit.com/downloads/uex-thank-you/">Download Mac or Linux version</a>
+            </div>
+            <div id="text-3">
+                <img width="100" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_0a47f56c0ae08c2bbc1cd48dbe10ab43/ultraedit.png" alt="logo"/>
+                <h3 style="font-size: 24px; color: #222222; font-weight: 400;">Download UltraEdit&nbsp;<h5 style="font-size: 14.4px; font-weight: 400;">2024.2 (released 2025-01-15) | <a href="https://www.ultraedit.com/updates/uehotfix/">Hotfix information</a></h5></h3>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="item">
+                        <h3>English</h3>
+                        <br/>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>Deutsch</h3>
+                        <h4>German</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>405DAF5ABB800762668B965CDA04DC504B5E12BB8167C205D31B7BD1799F54A5BD1799F54A5</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>Italiano</h3>
+                        <h4>Italian</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>F6AE0F552982CF949261AB86FFEBD4F44CBC467F8F0692E7B360CCD78392C04A</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>Español</h3>
+                        <h4>Spanish</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>0B59B29571D36A107A4A13CD52C046D9D66C1328C367EDFC5506D914A173C2D4D914A173C2D4</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>français</h3>
+                        <h4>French</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>4DDF3FE5C0F07709B39AC78D5A2E12851F4B01A8BE271359964D4197E8586662197E8586662</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>Português brasileiro</h3>
+                        <h4>Brazilian Portuguese</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>BA78B33518547FA143AEC9B552861BC50B8776C2FCEE0F4CDDD8CCD57C1221B1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>日本</h3>
+                        <h4>japanese</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>27D827353C2FB5B7157D209A79DC0B8D9C0367B2200859CB8C75DCA39F606C3B</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>한국어</h3>
+                        <h4>Korean</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>959F1821E36F83A0F3BBC2C474DC5097277DD97FB145E636DC8018C8BDDCD6AA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>华语</h3>
+                        <h4>Chinese</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>1E9C3C10FCE6B91FC27E35F1F989B611F619815C51EAF59D4D9F584C04E8B87C</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="item">
+                        <h3>華語</h3>
+                        <h4>Traditional Chinese</h4>
+                        <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a>
+                        <h5>SHA256</h5>
+                        <p>6ABF82400B210F1ED7E10EAB28A2BADD682BC7A4F6D0140CE4B00C0696CB3C8D</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
