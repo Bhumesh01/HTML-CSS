@@ -218,14 +218,59 @@ here the immediate parent of .rect div is .rects div..so it make it's background
 .rect:first-child:first-letter{
     color: rgb(16, 5, 120);
 }
+
+/*way1 to use the grid*/
+/* 
 #gridContainer{
     border: 2px solid black;
     display: grid;
-    grid-template-columns: 10px 20px auto 20px 10px;
+    grid-template-columns: [first] 120px [second] 120px [third] 120px [fourth];/*it tells how many columns needs to be formed
+    grid-template-rows: 100px 100px 100px;it tells how many rows needs to be formed
+    grid-auto-flow: row;
+    grid-auto-rows: 100px;This ensures consistent row heights 
+    grid-auto-flow: column;
+    grid-auto-columns: 120px;
     gap: 2px;
 }
 .grid{
     border: 2px solid red;
+    height: 100%;
+    width: 100%;
+}
+.item4{
+    grid-row: 2/4;
+    grid-column: second/third;
+/* } 
+/*Way 2 to use the grid:*/
+#gridContainer{
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                         "main main empty side"
+                         "foot foot foot foot"
+                         ;
+}
+.grid{
+    border: 2px solid white;
     height: 55px;
-    width: 55px;
+}
+.item1{
+    grid-area: nav;
+    background-color: purple;
+}
+.item2{
+    grid-area: main;
+    background-color: skyblue;
+}
+.item3{
+    grid-area: empty;
+    background-color: aqua;
+}
+.item4{
+    grid-area: side;
+    background-color: yellow;
+}
+.item5{
+    grid-area: foot;
+    background-color: orangered;
 }
