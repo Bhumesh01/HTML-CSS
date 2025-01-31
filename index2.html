@@ -6,13 +6,12 @@
         <title>CSS Transforms and Animations</title>
         <style>
             .box{
-                height: 50px;
-                width: 50px;
-                background-color: beige;
+                height: 4vh;
+                width: 5vw;
                 border: 2px solid black;
-                display: flex;
+                /* display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: center; */
                 /* transform: rotate(90deg); */
                 /* transform: rotate(0.25turn); */
                 /* transform: rotateZ(45deg); */
@@ -25,20 +24,70 @@
                 /* transform: skewY(60deg); */
                 /* transform: translateX(100%); */
                 /* transform: translateY(50%); */
-                /* transform: translateZ(15px); */
+                /* transform: translateZ(15px);
                 transform-origin: 0% 0%;
-                transform: rotate(45deg);
+                transform: rotate(45deg); */
+                /* transition-property: background-color, transform;
+                transition-duration: 3s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 1s; */
+                /* transition: all 3s ease-in-out 1s; */
+                /* animation-name: animation;
+                animation-duration: 3s;
+                animation-iteration-count: 3;
+                animation-timing-function:cubic-bezier(0.47,-0.1, 0.43, 1.14);
+                animation-delay: 1s; */
+                /* animation-direction: reverse; */
+                /* animation-play-state: running; */
+                animation: animation 4s ease-in-out 4, animation_2 2s ease-in-out 3;
             }
             .container{
                 /* perspective: 500px; */
-                width: 100vw;
-                height: 80vh;
-                border: 2px solid purple;
+                background-color: rgb(91, 76, 230);
+                width: 80vw;
+                height: 40vh;
+                /* border: 2px solid purple; */
+            }
+            .translate{
+                transform: translateX(10vw) translateY(10vh);
+                background-color: blue;
+            }
+            @keyframes animation {
+                from{
+                    background-color: red;
+                }
+                to{
+                    transform: translateX(500px);
+                    background-color: yellow;
+                }
+            }
+            @keyframes animation_2 {
+                0%{
+                    transform: rotate(0deg);
+                }
+                20%{
+                    transform: rotate(45deg);
+                }
+                40%{
+                    transform: rotate(90deg);
+                }
+                60%{
+                    transform: rotate(135deg);
+                }
+                80%{
+                    transform: rotate(180deg);
+                }
+                100%{
+                    transform: rotate(270deg);
+                }
             }
         </style>
     </head>
     <body>
-        <!--CSS Transforms: They are of 2-types: 2-D and 3-D-->
+        <!--CSS Transforms: They are of 2-types: 2-D and 3-D
+            Transition can help us to introduce smooth transition effect.
+            Animations are just like transitions with a benefit that we can determine the time period of multiple properties on a single element
+            -->
         <div class="container">
             <div class="box">Box</div>
         </div>
