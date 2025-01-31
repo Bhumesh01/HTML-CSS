@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Bounce Animation" />
+        <title>Bounce Animation</title>
+        <style>
+            .box{
+                height: 121px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 121px;
+                background-color: yellow;
+                border-radius: 70px;
+                border: 2px solid black;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: transform 5s ease-in-out 2;
+                animation: bounce 3s cubic-bezier(0.5, 0.05, 0.5, 1) infinite;
+            }
+            .container{
+                position: relative;
+                height: 80vh;
+                width: 80vw;
+                background-color: orangered;
+            }
+            @keyframes bounce{
+                0% {
+                    transform: translate(0, 0);
+                }
+                25%{
+                    transform: translateY(-350px) translateX(350px);
+                }
+                50%{
+                    transform: translateX(550px);
+                }
+                75%{
+                    transform: translateY(-350px) translateX(750px);
+                }
+                100%{
+                    transform: translateX(1050px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">Ball</div>
+        </div>
+    </body>
+</html>
