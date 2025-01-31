@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Designing a navbar">
+        <title>Flex Box</title>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                width: 90vw;
+                padding: 10px;
+                margin: 0px auto;
+            }
+            #logo >img{
+                width: 12vw;
+            }
+            #contents-1{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 55vw;
+                color: #222222;
+            }
+            #contents-2{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                gap: 15px;
+            }
+            #bar{
+                display: flex; 
+                justify-content: space-between;
+                align-items: center;
+            }
+            #mobileSideBar{
+                display: none;
+            }
+            .navitems{
+                padding: 0px 8px 13px 0px;
+            }
+            #search{
+                display: flex;
+                justify-content: center;
+                vertical-align: middle;
+                line-height: 1;
+            }
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #222222;
+            }
+            @media only screen and (max-width:980px){
+                #contents-1{
+                    display: none;
+                }
+                #mobileSideBar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: auto;
+                }
+                #search{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: auto;
+                }
+                #logo>img{
+                    width: 50%;
+                    min-width: 100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header style="width: 100%; margin: 0; padding: 0;">
+            <nav>
+                <div id="logo">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="ultraedit logo" />
+                </div>
+                <div id="bar">
+                    <div id="contents-1">
+                        <div class="navitems"><a href="#">Products &#9662;</a></div>
+                        <div class="navitems"><a href="#">For business &#9662;</a></div>
+                        <div class="navitems"><a href="#">Resources &#9662;</a></div>
+                        <div class="navitems"><a href="#">Support &#9662;</a></div>
+                        <div class="navitems"><a href="#">Our Company &#9662;</a></div>
+                        <div class="navitems"> <img src="./translation.png"  width="25" alt="language translation icon" /> </div>
+                    </div>
+                    <div id="contents-2">
+                        <div id="search">&#x1F50D;</div>
+                        <div id="mobileSideBar"> ☰</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </body>
+</html>
