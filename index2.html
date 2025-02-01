@@ -39,7 +39,7 @@
                 animation-delay: 1s; */
                 /* animation-direction: reverse; */
                 /* animation-play-state: running; */
-                animation: animation 4s ease-in-out 4, animation_2 2s ease-in-out 3;
+                /* animation: animation 4s ease-in-out 4, animation_2 2s ease-in-out 3; */
             }
             .container{
                 /* perspective: 500px; */
@@ -81,6 +81,28 @@
                     transform: rotate(270deg);
                 }
             }
+            .container2{
+                height: 634px;
+                width: 688px;
+                border: 2px solid black;
+                background-position: center center;
+                background-clip: border-box;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzw9Z5bH8JwC7lOxoEREbqu2kien_t87bx2PBvMeMIiabHyUouxz6TaZqqTWhJYk9vaiw&usqp=CAU");
+                background-repeat: no-repeat;
+            }
+            /* img{
+                border: 2px solid green;
+                width: 466px;
+                height: 488px; */
+                /* object-fit: cover; It will cover the height and width of the image box not the container here, it will cut some part of the image */
+                /* object-fit: contain;It will fit the whole image in the given width and height, it will maintain the aspect ratio */
+                /* object-fit: cover; */
+                /*we use object-position to specify which part to show and which to hide of the image*/
+                /* object-position: top left; */
+                /* object-fit: fill;the image will fit acc to the width and height specified but it might be distorted */
+                /* object-fit: scale-down;
+                object-position: 15px 50px;
+            } */
         </style>
     </head>
     <body>
@@ -90,6 +112,11 @@
             -->
         <div class="container">
             <div class="box">Box</div>
+        </div>
+        <!--Object Fit and Object Cover Property-->
+        <div class="container2">
+            <!-- <img src="https://static.vecteezy.com/system/resources/previews/029/360/891/non_2x/a-small-green-lizard-sitting-on-top-of-a-tree-branch-generative-ai-free-photo.jpg" alt="cameleon Stock image" /> -->
+
         </div>
     </body>
 </html>
