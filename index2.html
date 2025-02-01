@@ -103,6 +103,52 @@
                 /* object-fit: scale-down;
                 object-position: 15px 50px;
             } */
+            .container3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 600px;
+                gap: 5px;
+                height: 620px;
+                border: 2px solid black;
+            }
+            .img1{
+                width: 300px;
+                height: 200px;
+                object-fit: contain;
+                border: 2px solid blue;
+                background-color: rgb(42, 100, 247);
+                /* filter: brightness(120%) grayscale(100%); */
+                filter: drop-shadow(16px 16px 20px skyblue);
+                /* filter: blur(2.5px); */
+            }
+            .img2{
+                width: 300px;
+                height: 200px;
+                object-fit: contain;
+                border: 2px solid coral;
+                background-color: rgb(246, 166, 136);
+                /* filter: blur(0.91px); */
+                /* filter: blur(2.5px); */
+                /* filter: brightness(120%) grayscale(100%); */
+                filter: drop-shadow(16px 16px 20px pink);
+                /* filter: invert(1); */
+                /* filter: opacity(40%); 0 means transparent */
+            }
+            .img3{
+                width: 300px;
+                height: 200px;
+                object-fit: contain;
+                background-color: rgb(239, 85, 116);
+                border: 2px solid crimson;
+                /* filter: contrast(2.25); */
+                /* filter: blur(2.5px); */
+                /* filter: contrast(120%) grayscale(100%); */
+                /* filter: contrast(120%) sepia(90%); */
+                /* filter: hue-rotate(90deg); */
+                filter: drop-shadow(16px 16px 20px red);
+            }
         </style>
     </head>
     <body>
@@ -116,7 +162,13 @@
         <!--Object Fit and Object Cover Property-->
         <div class="container2">
             <!-- <img src="https://static.vecteezy.com/system/resources/previews/029/360/891/non_2x/a-small-green-lizard-sitting-on-top-of-a-tree-branch-generative-ai-free-photo.jpg" alt="cameleon Stock image" /> -->
-
+        </div>
+        <br/>
+        <!--CSS filter property: brightness, contrast, invert-->
+        <div class="container3">
+            <img class="img1" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1710845303.jpg" />
+            <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aKQqBBKCnD7KDC7vodrdnJsAhVYQREzDgw&s" />
+            <img class="img3" src="https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/methode/2021/01/11/d5ed0832-5001-11eb-ad83-255e1243236c_image_hires_113755.jpg?itok=6PsAhoy2&v=1610336282">
         </div>
     </body>
 </html>
